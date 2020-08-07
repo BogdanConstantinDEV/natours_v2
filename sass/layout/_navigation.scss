@@ -89,6 +89,9 @@
             background-size: 220%;
             transition: all 400ms;
 
+            @include respond(phone) {
+                background-size: 250%;
+            }
         }
 
         &:hover,

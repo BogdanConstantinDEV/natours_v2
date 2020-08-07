@@ -4,9 +4,14 @@
     font-size: 1.4rem;
     color: $color-gray-light-1;
 
+    @include respond(tab-land) {
+        padding: 8rem;
+    }
+
     @include respond(tab-port) {
         padding: 8rem 0;
-    }
+    }    
+
     
     
     &__logo-box {
@@ -14,11 +19,11 @@
         margin-bottom: 8rem;
 
         @include respond(tab-port) {
-            margin-bottom: 46em;
+            margin-bottom: 6em;
         }
     }
     &__logo {
-        width: 15rem;
+        width: 30rem;
         height: auto;
     }
     &__navigation {
